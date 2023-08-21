@@ -1,0 +1,81 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.main {
+    width: 440px;
+    /* height: 100vh; */
+    background: #3498db;
+    border-radius: 5px;
+    height: 590px;
+    margin-top: 10px;
+    padding: 20px 10px 10px 10px;
+    text-align: center;
+}
+
+/* .bal{
+    margin-bottom: 4rem;
+    padding: 2.5em;
+    background-color: rgb(24, 136, 136);
+    color: whitesmoke;
+    width: 220px;
+    margin-left: 52px;
+    margin-top: 40px;
+    text-align: justify;
+    border-radius: 5px;
+} */
+.add {
+    font-size: 29px;
+    /* text-align: justify; */
+}
+
+.expenseList {
+    padding: 0;
+    list-style: none;
+}
+
+input[type=text],
+input[type=number] {
+    margin-top: 15px;
+    margin-bottom: 25px;
+    padding: 7px;
+    width: 250px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+.btn {
+    width: 70px;
+    height: 36px;
+    border-radius: 5px;
+    background-color: rgb(22, 202, 91);
+    outline: none;
+    border: white;
+    font-weight: 700;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+
+
+li {
+    border: 1px solid cadetblue;
+    margin: 5px 0;
+    padding: 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: justify;
+    text-transform: uppercase;
+}

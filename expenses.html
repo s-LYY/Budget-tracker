@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="budget.css">
+    <title>expenses</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="main">
+            <!-- <h2 class="bal">BALANCES : </h2> -->
+            <h2 class="add">Add Transactions</h2>
+            <div class="list">
+                <input type="text" id="expense" placeholder="Name of Transactions">
+                <button class="btn" onclick="addExpense()">Add</button>
+                <input type="number" id="expenseOne" placeholder="Price of Transactions">
+                <button class="btn" onclick="addExpense()">Add</button>
+                <ol id="expenseList">
+                </ol>
+            </div>
+        </div>
+        
+    </div>
+
+    <script type="text/javascript" src="budget.js"></script>
+</body>
+</html>
