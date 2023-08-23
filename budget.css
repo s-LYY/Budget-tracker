@@ -1,5 +1,5 @@
 body{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: monospace;
 }
 
 .container {
@@ -12,25 +12,28 @@ body{
 .main {
     width: 440px;
     /* height: 100vh; */
-    background: #3498db;
+    /* background: #3498db; */
     border-radius: 5px;
     height: 590px;
     margin-top: 10px;
     padding: 20px 10px 10px 10px;
     text-align: center;
+    box-shadow: 2px 2px 10px gray;
 }
-
-/* .bal{
+/* 
+.bal{
     margin-bottom: 4rem;
     padding: 2.5em;
-    background-color: rgb(24, 136, 136);
+    background-color: rgb(21, 202, 91);
     color: whitesmoke;
-    width: 220px;
-    margin-left: 52px;
+    font-size: 25px;
+    width: 280px;
+    margin-left: 19px;
     margin-top: 40px;
     text-align: justify;
     border-radius: 5px;
-} */
+}  */
+
 .add {
     font-size: 29px;
     /* text-align: justify; */
