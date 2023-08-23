@@ -9,23 +9,6 @@
 </head>
 
 <body>
-
-    <!-- <div class="container">
-        <div class="main">
-            <h1>Financify</h1>
-            <h2 class="add">Add Transactions</h2>
-            <div class="list">
-                <input type="text" id="expense" placeholder="Name of Transactions">
-                <button class="btn" onclick="addExpense()">Add</button>
-                <input type="number" id="expenseOne" placeholder="Price of Transactions">
-                <button class="btn" onclick="addExpense()">Add</button>
-                <ol id="expenseList">
-                </ol>
-            </div>
-        </div>
-        
-    </div> -->
-
     <header>
         <h1>Financify</h1>
     </header>
@@ -46,14 +29,21 @@
 
     <hr />
     <div class="add">
-        <h2>Add Expenses</h2>
+        <h2>ADD EXPENSES</h2>
 
         <div class="expensevalues">
             <input type="text" id="expense" class="borderchange" placeholder="Name of Transactions" required>
             <input type="number" id="expenseOne" class="borderchange" placeholder="Amount" required>
-            <button class="btn">ADD</button>
+            <button class="btn" onclick="addExpense()">ADD</button>
             <button class="btn1">REMOVE</button>
         </div>
+    </div>
+    
+    <div class="expenselist">
+        <h2>List of Expenses</h2>
+        <ol id="orderlist">
+
+        </ol>
     </div>
     <script type="text/javascript" src="budget.js"></script>
 </body>
