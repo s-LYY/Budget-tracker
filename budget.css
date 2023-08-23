@@ -1,25 +1,24 @@
-body{
+body {
     font-family: monospace;
+    background-color: #e9ebed;
 }
 
-.container {
+/* .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* background-color: blue; */
-}
 
-.main {
+} */
+
+/* .main {
     width: 440px;
-    /* height: 100vh; */
-    /* background: #3498db; */
     border-radius: 5px;
     height: 590px;
     margin-top: 10px;
     padding: 20px 10px 10px 10px;
     text-align: center;
     box-shadow: 2px 2px 10px gray;
-}
+} */
 /* 
 .bal{
     margin-bottom: 4rem;
@@ -34,17 +33,16 @@ body{
     border-radius: 5px;
 }  */
 
-.add {
+/* .add {
     font-size: 29px;
-    /* text-align: justify; */
-}
+} */
 
-.expenseList {
+/* .expenseList {
     padding: 0;
     list-style: none;
-}
+} */
 
-input[type=text],
+/* input[type=text],
 input[type=number] {
     margin-top: 15px;
     margin-bottom: 25px;
@@ -57,9 +55,9 @@ input[type=number] {
     border-radius: 5px;
     border: none;
     outline: none;
-}
+} */
 
-.btn {
+/* .btn {
     width: 70px;
     height: 36px;
     border-radius: 5px;
@@ -70,10 +68,10 @@ input[type=number] {
     color: whitesmoke;
     cursor: pointer;
 }
+ */
 
 
-
-li {
+/* li {
     border: 1px solid cadetblue;
     margin: 5px 0;
     padding: 5px;
@@ -81,4 +79,69 @@ li {
     font-weight: 600;
     text-align: justify;
     text-transform: uppercase;
+} */
+/* 
+values of justify-content {
+    flex-start, flex-end, center, space-between, space-around, space-evenly(it applies to the horizontal aspect of the element)
+} */
+
+header {
+    background-color: rgb(22, 201, 91);
+    width: 100%;
+    padding: 20px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-bottom: 40px;
+}
+
+.values {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+.add {
+
+    margin-top: 4em;
+}
+
+.add>h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.expensevalues {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+input[type=text] {
+    margin-right: 5px;
+    padding: 10px;
+}
+
+input[type=number] {
+    width: 90px;
+    margin-right: 6px;
+}
+
+.btn {
+    background-color: #44bd32;
+    cursor: pointer;
+    border: white;
+    width: 70px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+.btn1 {
+    background-color: #e74c3c;
+    cursor: pointer;
+    border: white;
+    width: 70px;
+    color: white;
+    border-radius: 5px;
+    margin-right: 5px;
 }
