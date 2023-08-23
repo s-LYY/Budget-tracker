@@ -1,21 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="budget.css">
+    <title>expenses</title>
 </head>
-<body >
 
-    <!-- You'll need data to render the styles -->
-    <div class="flex items-center justify-center h-screen">
-        <form action="" class="bg-white shadow-md p-9">
-            <h2 class="text-3xl font-mono mb-5">Financify</h2>
-            <input class="max-w-xs block mb-4 py-2 px-4 appearance-none shadow border" type="email" placeholder="Enter Your Email" required>
-            <input class="block mb-4 py-2 px-4 appearance-none border shadow" type="password" placeholder="Enter Your Password" required>
-            <a href="expenses.html"><button type="button" class="bg-red-400 hover:bg-red-800 w-full mb-8 p-2 font-mono text-white font-bold cursor-pointer">SUBMIT</button></a>
-        </form>
+<body>
+    <header>
+        <h1>Financify</h1>
+    </header>
+
+
+    <div class="add">
+        <h2>ADD EXPENSES</h2>
+
+        <div class="expensevalues">
+            <input type="text" id="expense" class="borderchange" placeholder="Name of Transactions" required>
+            <input type="number" id="expenseOne" class="borderchange" placeholder="Amount" required>
+            <button class="btn" onclick="addExpense()">ADD</button>
+            <button class="btn1">REMOVE</button>
+        </div>
     </div>
+
+    <div class="expenselist">
+        <h2>List of Expenses</h2>
+        <ol id="orderlist">
+
+        </ol>
+    </div>
+
+    
+    <hr />
+    <div class="values">
+        <div>
+            <h2>Income :</h2>
+        </div>
+
+        <div>
+            <h2>Money Spent :</h2>
+        </div>
+
+        <div>
+            <h2>Balance :</h2>
+        </div>
+    </div>
+    <script type="text/javascript" src="budget.js"></script>
 </body>
+
 </html>
