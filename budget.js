@@ -37,6 +37,13 @@ function addExpense() {
   }
 }
 
-// function removeExpense() {
 
-// }
+function totalIncome() {
+  let income = document.getElementById('income');
+  let total = document.getElementById('total'); 
+
+  if (income.value !== "") {
+    total.textContent = `${parseInt(income.value)}`;
+    income.value = "";
+  }
+}

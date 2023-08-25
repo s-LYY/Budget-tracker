@@ -14,39 +14,52 @@
     </header>
 
 
-    <div class="add">
-        <h2>ADD EXPENSES</h2>
+    <div class="container">
 
-        <div class="expensevalues">
-            <input type="text" id="expense" class="borderchange" placeholder="Name of Transactions" required>
-            <input type="number" id="expenseOne" class="borderchange" placeholder="Amount" required>
-            <button class="btn" onclick="addExpense()">ADD</button>
-            <button class="btn1">REMOVE</button>
+        <div class="add">
+            <div class="first">
+                <h2>ADD EXPENSES</h2>
+                <div class="expensevalues">
+                    <input type="text" id="expense" placeholder="Name of Transactions" required>
+                    <input type="number" id="expenseOne" placeholder="Amount" required>
+                    <button class="btn" onclick="addExpense();">ADD</button>
+                    <button class="btn1">REMOVE</button>
+                </div>
+            </div>
+
+            <div class="second">
+                <h2>INCOME</h2>
+                <div class="expensevalues">
+                    <input type="number" id="income" placeholder="Enter your Income" required>
+                    <button class="btn" onclick="totalIncome()" >SUBMIT</button>
+                </div>
+
+            </div>
         </div>
-    </div>
 
-    <div class="expenselist">
-        <h2>List of Expenses</h2>
-        <ol id="orderlist">
+        <div class="expenselist">
+            <h2>List of Expenses</h2>
+            <ol id="orderlist">
+            </ol>
+        </div>
 
-        </ol>
     </div>
 
     
-    <hr />
-    <div class="values">
-        <div>
-            <h2>Income :</h2>
+    <footer>
+        <hr />
+        <div class="values">
+            <div>
+                <h2>Income : <span id="total">0</span> </h2>
+            </div>
+            <div>
+                <h2>Money Spent : <span>0</span> </h2>
+            </div>
+            <div>
+                <h2>Balance : <span class="bal">0</span> </h2>
+            </div>
         </div>
-
-        <div>
-            <h2>Money Spent :</h2>
-        </div>
-
-        <div>
-            <h2>Balance :</h2>
-        </div>
-    </div>
+    </footer>
     <script type="text/javascript" src="budget.js"></script>
 </body>
 

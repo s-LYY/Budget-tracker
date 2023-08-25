@@ -3,83 +3,6 @@ body {
     background-color: #e9ebed;
 }
 
-/* .container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-} */
-
-/* .main {
-    width: 440px;
-    border-radius: 5px;
-    height: 590px;
-    margin-top: 10px;
-    padding: 20px 10px 10px 10px;
-    text-align: center;
-    box-shadow: 2px 2px 10px gray;
-} */
-/* 
-.bal{
-    margin-bottom: 4rem;
-    padding: 2.5em;
-    background-color: rgb(21, 202, 91);
-    color: whitesmoke;
-    font-size: 25px;
-    width: 280px;
-    margin-left: 19px;
-    margin-top: 40px;
-    text-align: justify;
-    border-radius: 5px;
-}  */
-
-/* .add {
-    font-size: 29px;
-} */
-
-/* .expenseList {
-    padding: 0;
-    list-style: none;
-} */
-
-/* input[type=text],
-input[type=number] {
-    margin-top: 15px;
-    margin-bottom: 25px;
-    padding: 7px;
-    width: 250px;
-    height: 25px;
-    font-size: 15px;
-    font-weight: 600;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    border-radius: 5px;
-    border: none;
-    outline: none;
-} */
-
-/* .btn {
-    width: 70px;
-    height: 36px;
-    border-radius: 5px;
-    background-color: rgb(22, 202, 91);
-    outline: none;
-    border: white;
-    font-weight: 700;
-    color: whitesmoke;
-    cursor: pointer;
-}
- */
-
-
-/* li {
-    border: 1px solid cadetblue;
-    margin: 5px 0;
-    padding: 5px;
-    font-size: 15px;
-    font-weight: 600;
-    text-align: justify;
-    text-transform: uppercase;
-} */
 /* 
 values of justify-content {
     flex-start, flex-end, center, space-between, space-around, space-evenly(it applies to the horizontal aspect of the element)
@@ -87,7 +10,13 @@ values of justify-content {
 /* values of align-items {
     flex-start, flex-end, center, baseline, stretch(it applies to the vertical aspect)
 } */
-
+.container{
+    overflow: hidden;
+    min-height: 70%;
+    /* min-height: -webkkit-calc(100% - 200px);
+    min-height: -moz-calc(100% - 200px);
+    min-height: calc(100% - 200px); */
+}
 header {
     background-color: rgb(22, 201, 91);
     width: 100%;
@@ -97,18 +26,28 @@ header {
     margin-bottom: 20px;
 }
 
-.values {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 1rem;
-}
 
 .add {
     margin-bottom: 4em;
     margin-top: 4em;
+    width: 50%;
+    float: left;
+    box-sizing: border-box;
 }
 
-.add>h2 {
+.first{
+    border: 2px solid #c00101;
+    width: 500px;
+}
+
+.second{
+    /* margin-left: -2em; */
+    border: 2px solid #44bd32;
+    margin-top: 5em;
+    width: 500px;
+}
+
+h2 {
     display: flex;
     justify-content: center;
     font-size: 25px;
@@ -133,6 +72,12 @@ input[type=number] {
     font-size: 15px;
 }
 
+#income{
+    width: 149px;
+    padding: 10px;
+    /* font-size: 17px; */
+    font-weight: 600;
+}
 .btn {
     background-color: #44bd32;
     cursor: pointer;
@@ -143,7 +88,6 @@ input[type=number] {
     border-radius: 5px;
     margin-right: 5px;
     transition: transform 0.2s, box-shadow 0.2s;
-
 }
 
 .btn1 {
@@ -176,27 +120,38 @@ input[type=number] {
 
 .expenselist {
     margin-bottom: 250px;
+    width: 50%;
+    float: right;
+    box-sizing: border-box;
 }
 
 .expenselist>h2 {
     display: flex;
     justify-content: center;
     font-size: 27px;
-    margin-right: -20px;
+    /* margin-right: -20px; */
 }
 
-#orderlist {
+/* #orderlist {
     justify-content: center;
     width: 40%;
-    margin-left: 24pc;
-}
+} */
 
 li {
-    border: 1px solid cadetblue;
+    border: 1px solid #18690b;
     margin: 5px 0;
     padding: 5px;
     font-size: 18px;
     font-weight: 600;
     text-align: justify;
     text-transform: uppercase;
+}
+.values {
+    display: flex;
+    justify-content: space-around;
+    /* margin-bottom: 1rem; */
+}
+footer{
+    clear: both;
+    margin-top: 1em;
 }
