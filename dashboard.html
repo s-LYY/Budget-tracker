@@ -23,18 +23,55 @@
         </ul>
       </nav>
     </header>
-    <main>
+    <div class="container">
       <section id="dashboard">
         <h2>Dashboard</h2>
         <p>Welcome to your dashboard!</p>
         <p>Your total expenses for the month are $1200.</p>
         <p>Your average expense per day is $200.</p>
       </section>
-      <section id="addexpense"></section>
-      <section id="history"></section>
+      <section id="addexpense">
+        <form action="">
+          <label for="expense">Expense Title</label>
+          <input type="text" name="" id="expense" /><br>
+          <label for="amount">Amount</label>
+          <input type="number" name="" id="amount" min="0" step="0.1" required /><br>
+          <label for="date">Date</label>
+          <input type="date" name="" id="date" /><br>
+          <label for="pay">Payment Method</label><br>
+          <select name="" id="pay">
+            <option value="">Cash</option>
+            <option value="">Card</option>
+            <option value="">Transfer</option>
+          </select>
+          <button type="submit">ADD EXPENSE</button>
+        </form>
+
+        <div>
+          <h3>Recent Expenses</h3>
+          <ul>
+            <li>
+              <span>Title: Groceries</span>
+              <span>Amount: $100</span>
+              <span>Date: 2022-01-01</span>
+            </li>
+            <li>
+              <span>Title: Electricity</span>
+              <span>Amount: $50</span>
+              <span>Date: 2022-01-02</span>
+            </li>
+            <li>
+              <span>Title: Internet</span>
+              <span>Amount: $20</span>
+              <span>Date: 2022-01-03</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="sheet"></section>
       <section id="history"></section>
       <section id="report"></section>
       <section id="settings"></section>
-    </main>
+    </div>
   </body>
 </html>
