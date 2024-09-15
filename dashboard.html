@@ -7,23 +7,19 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
     <link rel="stylesheet" href="/bootstrap/css/bootstrap.min.css" />
     <link rel="stylesheet" href="./styling/dashboard.css" />
-    <style>
-      section {
-        padding: 60px;
-        margin: 0;
-        background-color: #f5f5f5;
-      }
-    </style>
     <title>dashboard</title>
   </head>
   <body>
     <!-- navbar section -->
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
-        <h1 class="navbar-brand fs-1 text-light" href="#">EXPENSIO</h1>
+        <h1 class="navbar-brand" href="#">EXPENSIO</h1>
         <button
           class="navbar-toggler bg-light"
           type="button"
@@ -41,23 +37,20 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a
-                class="nav-link text-light"
-                aria-current="page"
-                href="#dashboard"
+              <a class="nav-link" aria-current="page" href="#dashboard"
                 >Dashboard</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#add-expense">Expense</a>
+              <a class="nav-link" href="#add-expense">Expense</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-light" href="#transaction-history"
+              <a class="nav-link" href="#transaction-history"
                 >Transaction History</a
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-disabled="true">Disabled</a>
+              <a class="nav-link" href="#profile">Profile</a>
             </li>
           </ul>
         </div>
@@ -65,17 +58,31 @@
     </nav>
 
     <!-- dashboard -->
-     <section id="dashboard">
-        <div class="container-lg d-flex justify-content-center align-items-center" style="height: 100vh;">
-          <h2 class="fs-sm-3">Welcome Back, ASTA</h2>
+    <section id="dashboard">
+      <div
+        class="container-lg d-flex justify-content-center align-items-center"
+        style="height: 100vh"
+      >
+        <div>
+          <h2 class="fs-1 fs-md-2 fs-sm-3 fs-xs-4">Welcome Back, ASTA</h2>
+          <div class="firstExpense">
+            <p>Your total expense :</p>
+            <span id="totalExpense"></span>
+          </div>
+
+          <div class="firstExpense">
+            <p>Remaining Budget :</p>
+            <span id="budget"></span>
+          </div>
         </div>
-     </section>
+      </div>
+    </section>
 
     <!-- add expense section -->
     <section id="add-expense">
-      <div class="container-lg">
+      <div class="container-lg" style="height: 100vh">
         <div class="row justify-content-between">
-          <div class="col-lg-4 mb-4">
+          <div class="col-lg-4 col-md-6 mb-4">
             <div class="border rounded border-secondary p-4 shadow">
               <h3 class="fs-3 h2">Add Expense</h3>
               <form action="">
@@ -97,7 +104,6 @@
                   <button
                     class="btn btn-success btn-lg w-100"
                     id="add-btn"
-                    onclick="recent()"
                     type="button"
                   >
                     ADD
@@ -107,10 +113,10 @@
             </div>
           </div>
 
-          <div class="col-lg-6">
+          <div class="col-lg-6 col-md-6">
             <div class="border rounded border-secondary p-4 shadow">
               <div class="text-center">
-                <h2>Recent Expenses</h2>
+                <h2 class="text-sm-start">Recent Expenses</h2>
                 <ol class="list-group list-group-numbered" id="recent-list">
                   <!-- <li
                     class="list-group-item d-flex justify-content-between align-items-center"
@@ -128,20 +134,18 @@
     <!-- transaction history -->
 
     <!-- settings -->
-     <section id="settings">
+    <section id="settings">
       <div class="container-lg">
-        <h2>SETTINGS</h2>
+        <h2 class="fs-1 fs-md-2 fs-sm-3 fs-xs-4">SETTINGS</h2>
         <form action="">
           <label for="updateIncome">
             Update Income
             <input type="number" id="updateIncome" name="updateIncome" />
-            <button type="submit" class="btn btn-primary">
-              Update
-            </button>
+            <button type="submit" class="btn btn-primary">Update</button>
           </label>
         </form>
       </div>
-     </section>
+    </section>
 
     <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="script/dashboard.js"></script>

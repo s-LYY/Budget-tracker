@@ -1,9 +1,110 @@
 body {
-  background-color: #f5f5f5;
+  background-color: #333;
+  font-family: 'Open Sans', sans-serif;
 }
-.btn-success {
+.navbar{
+  background-color: #333;
+  padding: 15px 20px;
+}
+.navbar-brand {
+  font-size: 24px;
+  font-weight: bold;
+}
+.nav-link {
+  color: #f5f5f5;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+.btn {
   background-color: #1f7a8c;
 }
 .bg-dark {
-  background-color: #333;
+  background-color: #26292b;
+}
+#dashboard {
+  color: white;
+  background-color: #f5f5f5;
+}
+#dashboard h2 {
+  color: #333;
+  font-size: 36px;
+  font-weight: bold;
+}
+.firstExpense p {
+  font-size: 18px;
+  color: #666;
+}
+#totalExpense,
+#budget {
+  font-size: 20px;
+  font-weight: bold;
+  color: #28a745;
+}
+.firstExpense {
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+}
+#add-expense {
+  background-color: #fff;
+  padding: 60px 0;
+}
+.form-control {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#add-btn {
+  background-color: #28a745; /* Green for the add button */
+  color: #fff;
+  font-size: 18px;
+}
+#add-btn:hover {
+  background-color: #218838;
+}
+#recent-list {
+  max-height: 300px;
+  overflow-y: auto; /* Allow scrolling if the list grows */
+  padding: 10px;
+}
+
+.list-group-item {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.list-group-item:hover {
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+#settings {
+  background-color: #f5f5f5;
+  padding: 40px 0;
+}
+
+#settings h2 {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#updateIncome {
+  padding: 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+}
+
+#settings button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+#settings button:hover {
+  background-color: #0056b3;
 }

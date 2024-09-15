@@ -1,23 +1,20 @@
 let expenseTitle = document.getElementById("expense-title");
 let amount = document.getElementById("amount");
-let btn = document.getElementById("add-btn");
 let expDate = document.getElementById("expense-date");
+let btn = document.getElementById("add-btn");
 let recentList = document.getElementById("recent-list");
+let totalExpense = document.getElementById("totalExpense");
+let totalAmount = 0;
 
-// btn.addEventListener("click", function () {
-//   if (
-//     expenseTitle.value === "" ||
-//     amount.value === "" ||
-//     expDate.value === ""
-//   ) {
-//     alert("Fields must not be empty");
-//   } else if (amount.value <= 0) {
-//     alert("Amount must be greater than zero");
-//   } else if (!isNaN(expenseTitle.value)) {
-//     alert("expenseTitle must consist of only alphabets");
-//   }
-//   recent()
-// });
+//DATE FORMAT CHANGE
+function format(date) {
+  const option = {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  };
+  return date.toLocaleDateString(undefined, option);
+}
 
 // // RECENT EXPENSE
 function recentupdate() {
@@ -29,29 +26,33 @@ function recentupdate() {
     "justify-content-between",
     "align-items-center"
   );
-  li.innerHTML = `<span class='bi bi-receipt'> ${expenseTitle.value.toUpperCase()}</span> <span class='bi bi-currency0-dollar'>${
+  li.innerHTML = `<span class='bi bi-receipt'> ${expenseTitle.value.toUpperCase()}</span> $${
     amount.value
-  }</span> <span class="badge bg-primary rounded-pill bi bi-calendar3"> ${standardDate}</span>`;
+  } <span class="badge bg-primary rounded-pill bi bi-calendar3"> ${standardDate}</span>`;
   recentList.appendChild(li);
+
   expenseTitle.value = "";
   amount.value = "";
   expDate.value = "";
 }
-function format(date) {
-  const option = {
-    day: "2-digit",
-    month: "2-digit",
-    year: "numeric",
-  };
-  return date.toLocaleDateString(undefined, option);
+
+//UPDATE EXPENSE FUNCTION
+function updateExpense() {
+  totalExpense.textContent = `$${totalAmount}`;
 }
-function recent() {
+
+btn.addEventListener("click", function recent() {
   if (
     expenseTitle.value.trim() != "" &&
     amount.value != "" &&
     expDate.value != ""
   ) {
+    const newAmount = Number(amount.value);
+    totalAmount += newAmount;
+    console.log(`Total Amount: ${totalAmount}`);
     recentupdate();
+    updateExpense();
+  } else {
+    console.log("please fill in all fields");
   }
-  // console.log(expenseTitle.value)
-}
+});
